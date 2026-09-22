@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MC Lawncare LLC | Foristell, Missouri</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #17291c;
+            background: #f8f5ee;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 76px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 6%;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+        }
+
+        /* LOGO */
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 62px;
+            width: auto;
+            display: block;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #17291c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #2e7544;
+        }
+
+        .nav-phone {
+            background: #245c35;
+            color: white;
+            text-decoration: none;
+            padding: 11px 18px;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .nav-phone:hover {
+            background: #2e7544;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 720px;
+            padding: 150px 6% 100px;
+            background:
+                linear-gradient(
+                    rgba(36, 92, 53, 0.90),
+                    rgba(36, 92, 53, 0.90)
+                ),
+                #245c35;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 20px;
+            margin-bottom: 35px;
+            color: #f1eee5;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 7px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .button-primary {
+            background: #d5bc8e;
+            color: #17291c;
+        }
+
+        .button-primary:hover {
+            background: #c3a875;
+        }
+
+        .button-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .button-secondary:hover {
+            background: white;
+            color: #245c35;
+        }
+
+        /* CONTACT CTA */
+        .cta {
+            text-align: center;
+            padding: 100px 6%;
+            background: #f8f5ee;
+        }
+
+        .cta h2 {
+            font-size: 40px;
+            color: #245c35;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            margin-bottom: 25px;
+            color: #667066;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #17291c;
+            color: white;
+            text-align: center;
+            padding: 30px 6%;
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #d9dfda;
+        }
+
+        footer a {
+            color: #d5bc8e;
+            text-decoration: none;
+        }
+
+        /* MOBILE */
+        @media (max-width: 850px) {
+
+            nav {
+                padding: 0 4%;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .logo img {
+                height: 58px;
+            }
+
+            .hero {
+                min-height: 650px;
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .nav-phone {
+                padding: 9px 12px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .logo img {
+                height: 52px;
+            }
+
+            .nav-phone {
+                font-size: 12px;
+                padding: 8px 10px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .cta h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="MC Lawn Care LLC Logo">
+        </a>
+
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="services.html">Services</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <a href="tel:6367342766" class="nav-phone">
+            (636) 734-2766
+        </a>
+
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Quality Outdoor Work.<br>
+                Beautiful Results.
+            </h1>
+
+            <p>
+                MC Lawncare LLC provides dependable lawn care,
+                landscaping, hardscaping, and outdoor services
+                throughout Warren, Lincoln &amp; St.Charles counties in Missouri.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="services.html" class="button button-primary">
+                    View Our Services
+                </a>
+
+                <a href="contact.html" class="button button-secondary">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT CTA -->
+    <section class="cta">
+
+        <h2>Ready to Improve Your Outdoor Space?</h2>
+
+        <p>
+            Get in touch with MC Lawncare LLC about your next project.
+        </p>
+
+        <a href="contact.html" class="button button-primary">
+            Contact MC Lawncare
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            <strong>MC Lawncare LLC</strong>
+        </p>
+
+        <p>
+            Foristell, Missouri
+        </p>
+
+        <p>
+            <a href="tel:6367342766">
+                (636) 734-2766
+            </a>
+        </p>
+
+        <p>
+            © 2026 MC Lawncare LLC. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>

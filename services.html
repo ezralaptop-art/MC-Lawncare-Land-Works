@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | MC Lawncare LLC</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #17291c;
+            background: #f8f5ee;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 76px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 6%;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 62px;
+            width: auto;
+            display: block;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #17291c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #2e7544;
+        }
+
+        .nav-phone {
+            background: #245c35;
+            color: white;
+            text-decoration: none;
+            padding: 11px 18px;
+            border-radius: 7px;
+            font-weight: 700;
+        }
+
+        .nav-phone:hover {
+            background: #2e7544;
+        }
+
+        /* PAGE HEADER */
+        .page-header {
+            padding: 150px 6% 90px;
+            background: #245c35;
+            color: white;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(42px, 6vw, 64px);
+            margin-bottom: 15px;
+        }
+
+        .page-header p {
+            font-size: 19px;
+            color: #e7eee8;
+        }
+
+        /* SERVICES */
+        .services-section {
+            padding: 90px 6%;
+        }
+
+        .services-grid {
+            max-width: 1150px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 35px 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+            transition: 0.2s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .service-icon {
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            background: #e7efe8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .service-card h2 {
+            color: #245c35;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: #667066;
+        }
+
+        /* CTA */
+        .cta {
+            text-align: center;
+            padding: 80px 6%;
+            background: #245c35;
+            color: white;
+        }
+
+        .cta h2 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            color: #e7eee8;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #d5bc8e;
+            color: #17291c;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 7px;
+            font-weight: 700;
+        }
+
+        .button:hover {
+            background: #c3a875;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #17291c;
+            color: white;
+            text-align: center;
+            padding: 30px 6%;
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #d9dfda;
+        }
+
+        footer a {
+            color: #d5bc8e;
+            text-decoration: none;
+        }
+
+        /* MOBILE */
+        @media (max-width: 850px) {
+            nav {
+                padding: 0 4%;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .logo img {
+                height: 58px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-phone {
+                padding: 9px 12px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 550px) {
+            .logo img {
+                height: 52px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-phone {
+                font-size: 12px;
+                padding: 8px 10px;
+            }
+
+            .services-section {
+                padding: 65px 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="MC Lawncare LLC Logo">
+        </a>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a href="tel:6367342766" class="nav-phone">
+            (636) 734-2766
+        </a>
+
+    </nav>
+
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+
+        <h1>Our Services</h1>
+
+        <p>
+            Outdoor services for properties throughout
+            Warren, Lincoln &amp; St. Charles counties.
+        </p>
+
+    </header>
+
+
+    <!-- SERVICES -->
+    <section class="services-section">
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon">🌱</div>
+                <h2>Lawn Care</h2>
+                <p>Reliable lawn care to keep your property looking its best.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">✂️</div>
+                <h2>Bush Trimming</h2>
+                <p>Keep bushes and shrubs neat, clean, and well maintained.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🍂</div>
+                <h2>Mulching</h2>
+                <p>Mulching services to improve the appearance of your landscape.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h2>Gutter Cleaning</h2>
+                <p>Help keep your gutters clear and functioning properly.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🧱</div>
+                <h2>Retaining Walls</h2>
+                <p>Retaining wall work designed for both function and appearance.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🪵</div>
+                <h2>Decks</h2>
+                <p>Deck construction and outdoor improvements for your property.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌿</div>
+                <h2>Planting &amp; Seeding</h2>
+                <p>Planting and seeding services to improve your outdoor space.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌾</div>
+                <h2>Aeration</h2>
+                <p>Aeration services to help maintain healthy lawns.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🪨</div>
+                <h2>Hardscapes &amp; Paver Patios</h2>
+                <p>Hardscape and paver work for functional outdoor spaces.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🛠️</div>
+                <h2>Edging &amp; Rock Install</h2>
+                <p>Edging and rock installation to finish your landscape.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+        <h2>Have an Outdoor Project?</h2>
+
+        <p>
+            Contact MC Lawncare LLC to get started.
+        </p>
+
+        <a href="contact.html" class="button">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p><strong>MC Lawncare LLC</strong></p>
+
+        <p>Foristell, Missouri</p>
+
+        <p>
+            <a href="tel:6367342766">
+                (636) 734-2766
+            </a>
+        </p>
+
+        <p>
+            © 2026 MC Lawncare LLC. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
